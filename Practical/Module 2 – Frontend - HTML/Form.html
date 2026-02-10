@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Registration Form</title>
+</head>
+<body>
+
+<h2 align="center"> User Registration Form </h2>
+
+<form>
+    <fieldset>
+        <legend><strong>Personal Information</strong></legend>
+
+        <table cellpadding="10">
+            <tr>
+                <td>Full Name:</td>
+                <td>
+                    <input type="text" name="fullname" placeholder="Enter your full name" required>
+                </td>
+            </tr>
+
+            <tr>
+                <td>Email:</td>
+                <td>
+                    <input type="email" name="email" placeholder="example@email.com" required>
+                </td>
+            </tr>
+
+            <tr>
+                <td>Password:</td>
+                <td>
+                    <input type="password" name="password" placeholder="Enter password" required>
+                </td>
+            </tr>
+
+            <tr>
+                <td>Gender:</td>
+                <td>
+                    <input type="radio" name="gender"> Male
+                    <input type="radio" name="gender"> Female
+                    <input type="radio" name="gender"> Other
+                </td>
+            </tr>
+
+            <tr>
+                <td>Date of Birth:</td>
+                <td>
+                    <input type="date" name="dob">
+                </td>
+            </tr>
+            <tr>
+                <td>Phone Number:</td>
+                <td>
+                    <input type="tel" name="phone" placeholder="Enter your phone number" required maxlength="10" pattern="[0-9]{10}">
+                </td>
+            </tr>
+
+            <tr>
+                <td>Country:</td>
+                <td>
+                    <select name="country">
+                        <option>Select Country</option>
+                        <option>India</option>
+                        <option>USA</option>
+                        <option>UK</option>
+                        <option>Australia</option>
+                    </select>
+                </td>
+            </tr>
+
+            <tr>
+                <td>Skills:</td>
+                <td>
+                    <input type="checkbox"> HTML
+                    <input type="checkbox"> CSS
+                    <input type="checkbox"> JavaScript
+                </td>
+            </tr>
+
+            <tr>
+                <td>About You:</td>
+                <td>
+                    <textarea rows="4" cols="25" placeholder="Write something about yourself"></textarea>
+                </td>
+            </tr>
+
+            <tr>
+                <td colspan="2" align="center">
+                    <input type="submit" value="Register">
+                    <input type="reset" value="Clear">
+                </td>
+            </tr>
+        </table>
+    </fieldset>
+</form>
+
+</body>
+</html>
