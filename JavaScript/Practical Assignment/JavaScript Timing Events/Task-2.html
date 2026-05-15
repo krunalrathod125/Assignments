@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Task 2: Digital Clock Using setInterval()</h1>
+    <div id="clock" style="font-size: 2em; font-weight: bold;"></div>
+    <script>
+        function updateClock() {
+            let now = new Date();
+
+            let time = now.toLocaleTimeString();
+
+            document.getElementById("clock").innerHTML = time;
+        }
+
+        // Update clock every second
+        setInterval(updateClock, 1000);
+
+        // Initial call
+        updateClock();
+
+        document.getElementById("clock").style.color = "red";
+        document.getElementById("clock").innerHTML = "Loading clock...";
+    </script>
+
+</body>
+</html>
